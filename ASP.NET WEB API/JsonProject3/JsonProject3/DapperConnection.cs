@@ -11,7 +11,7 @@ namespace JsonProject3
 {
     public class DapperConnection
     {
-        string connectionString = "Server=DESKTOP-JNBQ77L;Database=EmployeeDB;User ID=ravi;Password=qwerty";
+        string connectionString = "Server=SAILS-TDM04;Database=EmployeeDB;User ID=ravi;Password=qwerty";
         private IDbConnection connected { get; set; }
         public DapperConnection()
         {
