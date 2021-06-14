@@ -12,6 +12,7 @@ using LiveProjectAuthentication.Models.authenticate;
 
 namespace LiveProjectAuthentication.Models
 {
+    //[Authentication]
     [RoutePrefix("travel")]
     public class TravelController : ApiController
     {
@@ -23,10 +24,8 @@ namespace LiveProjectAuthentication.Models
             connected = new SqlConnection(connectionString);
         }
 
-       
 
         [Authentication]
-
         [Route("getall")]
         [HttpGet]
         public HttpResponseMessage GetAllEmployees()
@@ -37,12 +36,17 @@ namespace LiveProjectAuthentication.Models
 
         }
 
+        [Authentication]
         [Route("{id}")]
-
-        public TableTravel Get(int id)
+        [HttpGet]
+        public HttpResponseMessage  Get(int id)
         {
-            return mydapper.GetId(id);
+            string sql = "SELECT * from travel_history WHERE _cn6ca=@ID";
+            return Request.CreateResponse(HttpStatusCode.OK,connected.Query<TableTravel>(sql, new {ID = id}).FirstOrDefault());
         }
+
+
+       
         [Route("add")]
         [HttpPost]
         public void Post([FromBody] TableTravel prod)
@@ -50,6 +54,8 @@ namespace LiveProjectAuthentication.Models
             mydapper.AddData(prod);
         }
 
+
+       
         [Route("update")]
         [HttpPut]
         public void Put([FromBody] TableTravel prod)
@@ -57,8 +63,11 @@ namespace LiveProjectAuthentication.Models
             mydapper.AddData(prod);
         }
 
+        
+        [Authentication]
         [Route("delete/{id}")]
         [HttpDelete]
+        
         public void Delete(int id)
         {
             mydapper.DeleteData(id);

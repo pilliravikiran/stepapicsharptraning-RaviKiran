@@ -33,7 +33,8 @@ namespace LiveProjectAuthentication.Models.authenticate
                 
                if(mydap.Check(username, password))
                 {
-                    Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity(username), null);
+                    var identity = new GenericIdentity(username);
+                    Thread.CurrentPrincipal = new GenericPrincipal(identity, null);
                 }
                 else
                 {
