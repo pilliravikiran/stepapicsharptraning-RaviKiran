@@ -1,0 +1,13 @@
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\bin\Debug\netcoreapp3.1\StartingC.exe
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\bin\Debug\netcoreapp3.1\StartingC.deps.json
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\bin\Debug\netcoreapp3.1\StartingC.runtimeconfig.json
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\bin\Debug\netcoreapp3.1\StartingC.runtimeconfig.dev.json
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\bin\Debug\netcoreapp3.1\StartingC.dll
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\bin\Debug\netcoreapp3.1\StartingC.pdb
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\obj\Debug\netcoreapp3.1\StartingC.AssemblyInfoInputs.cache
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\obj\Debug\netcoreapp3.1\StartingC.AssemblyInfo.cs
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\obj\Debug\netcoreapp3.1\StartingC.csproj.CoreCompileInputs.cache
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\obj\Debug\netcoreapp3.1\StartingC.dll
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\obj\Debug\netcoreapp3.1\StartingC.pdb
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\obj\Debug\netcoreapp3.1\StartingC.genruntimeconfig.cache
+C:\Users\Ravi\Desktop\MyProgram\StartingC\StartingC\obj\Debug\netcoreapp3.1\StartingC.csprojAssemblyReference.cache

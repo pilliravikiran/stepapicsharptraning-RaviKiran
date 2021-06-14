@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dog.cs" />
+    <Compile Remove="Dog1.cs" />
+    <Compile Remove="Factorial.cs" />
+    <Compile Remove="ifpro.cs" />
+    <Compile Remove="pattern.cs" />
+    <Compile Remove="read.cs" />
+    <Compile Remove="readint.cs" />
+    <Compile Remove="readlin.cs" />
+    <Compile Remove="Rectangle.cs" />
+    <Compile Remove="SymmetricArray.cs" />
+  </ItemGroup>
+
+</Project>
