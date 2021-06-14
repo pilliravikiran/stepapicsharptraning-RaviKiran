@@ -1,2 +1,0 @@
-C:\Users\Ravi\Music\stepapicsharptraning-RaviKiran\ASP.NET WEB API\aspcrud2\aspcrud2\obj\Debug\aspcrud2.csprojAssemblyReference.cache
-C:\Users\Ravi\Music\stepapicsharptraning-RaviKiran\ASP.NET WEB API\aspcrud2\aspcrud2\obj\Debug\aspcrud2.csproj.CoreCompileInputs.cache

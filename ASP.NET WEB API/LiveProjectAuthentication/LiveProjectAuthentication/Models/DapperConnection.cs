@@ -11,7 +11,7 @@ namespace LiveProjectAuthentication.Models
     public class DapperConnection
     {
         string connectionString = "Server=SAILS-TDM04;Database=EmployeeDB;User ID=ravi;Password=qwerty";
-        private IDbConnection connected { get; set; }
+        public IDbConnection connected { get; set; }
         public DapperConnection()
         {
             connected = new SqlConnection(connectionString);

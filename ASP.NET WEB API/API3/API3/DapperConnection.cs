@@ -27,6 +27,7 @@ namespace API3
         {
             string SqlStatement = "INSERT INTO travel_history(_cn6ca,accuracylocation,address,datasource,latlong,modeoftravel,pid,placename,timefrom,timeto,type)Values(@_cn6ca,@accuracylocation,@address,@datasource,@latlong,@modeoftravel,@pid,@placename,@timefrom,@timeto,@type)";
             connected.Execute(SqlStatement, travelshist);
+		//connected.Execute("MyData", employee, commandType: CommandType.StoredProcedure);
 
         }
 

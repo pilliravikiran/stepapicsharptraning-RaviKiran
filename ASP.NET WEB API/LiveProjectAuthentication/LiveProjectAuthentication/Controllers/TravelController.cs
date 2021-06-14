@@ -17,32 +17,24 @@ namespace LiveProjectAuthentication.Models
     public class TravelController : ApiController
     {
         DapperConnection mydapper = new DapperConnection();
-        string connectionString = "Server=SAILS-TDM04;Database=EmployeeDB;User ID=ravi;Password=qwerty";
-        private IDbConnection connected { get; set; }
-        public TravelController()
-        {
-            connected = new SqlConnection(connectionString);
-        }
-
+          
 
         [Authentication]
         [Route("getall")]
         [HttpGet]
         public HttpResponseMessage GetAllEmployees()
-        {
-            
-            return Request.CreateResponse(HttpStatusCode.OK, this.connected.Query<TableTravel>("SELECT * FROM travel_history" ));
-
-
+        {           
+            return Request.CreateResponse <List<TableTravel>>(HttpStatusCode.OK, mydapper.GetAll() );
         }
+
 
         [Authentication]
         [Route("{id}")]
         [HttpGet]
         public HttpResponseMessage  Get(int id)
         {
-            string sql = "SELECT * from travel_history WHERE _cn6ca=@ID";
-            return Request.CreateResponse(HttpStatusCode.OK,connected.Query<TableTravel>(sql, new {ID = id}).FirstOrDefault());
+            
+            return Request.CreateResponse(HttpStatusCode.OK,mydapper.GetId(id));
         }
 
 
