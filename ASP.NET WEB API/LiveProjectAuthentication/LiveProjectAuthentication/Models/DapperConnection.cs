@@ -54,7 +54,7 @@ namespace LiveProjectAuthentication.Models
 
         public bool Check(string username, string password)
         {
-            cred.UserID = username;
+            
 
             string user = this.connected.QueryFirst<string>("SELECT UserID FROM Credentials WHERE UserID=@UserID", new { UserID = username });
             string pass = this.connected.QueryFirst<string>("SELECT Password FROM Credentials WHERE UserID=@UserID", new { UserID = username });
